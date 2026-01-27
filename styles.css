@@ -20,6 +20,7 @@ main {
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
+    text-align: center;
 }
 
 footer {
@@ -30,6 +31,20 @@ footer {
 
 a {
     color: aqua;
+}
+
+img {
+    aspect-ratio: fixed;
+    max-width: min(500px, 100%);
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+video {
+    aspect-ratio: fixed;
+    max-width: min(500px, 100%);
+    max-height: 400px;
+    border-radius: 10px;
 }
 
 .image-container {
@@ -49,14 +64,21 @@ a {
 }
 
 .hidden-content {
-    max-width: 800px;
+    margin: 20px;
+    max-width: 100%;
     max-height: 0;
-    overflow: hidden;
     transition: max-height 1.5s ease-in-out;
-    margin: 10px;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    gap: 20px;
 }
 
 /* Select .hidden-content that follows .toggle */
 .toggle:checked~.hidden-content {
     max-height: 1000px;
+}
+
+.hidden-content div {
+    flex: 1;
 }

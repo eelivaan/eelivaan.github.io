@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #33333399;
     padding: 20px;
     border-radius: 5px;
 }
@@ -45,6 +45,7 @@ video {
     max-width: min(500px, 100%);
     max-height: 400px;
     border-radius: 10px;
+    margin-right: 20px;
 }
 
 .image-container {
@@ -72,6 +73,7 @@ video {
     overflow: hidden;
     display: flex;
     gap: 20px;
+    flex-flow: wrap;
 }
 
 /* Select .hidden-content that follows .toggle */
@@ -81,4 +83,5 @@ video {
 
 .hidden-content div {
     flex: 1;
+    min-width: 250px;
 }

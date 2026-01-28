@@ -10,47 +10,12 @@
 
 <body>
     <header>
-        <h1>About Me</h1>
-        <p>This is my portfolio page where I showcase my projects and skills.</p>
+        <h1>Portfolio of my Projects</h1>
+        <p>by Elias Vesanen &mdash; Bachelor's student in Aalto University with a major in Automation and Robotics</p>
     </header>
 
     <main>
         <P>Click images for more details.</P>
-        <section class="image-container">
-            <label>
-                <input type="checkbox" class="toggle">
-                <h2>Aaltoes <a href="https://luma.com/r066ymq1" target="_blank">Robotics & AI Hackathon 2025</a> Project
-                </h2>
-                <img src="media/a.jpg" alt="RoboticArm">
-                <div class="hidden-content">
-                    <div>
-                        <p>
-                            We made a Halloween-themed application where the user can ask questions from a "mechanical
-                            seer"
-                            that then answers by pointing letters with SO-101 robotic arm.
-                            It consists of a user interface where the question is written and then
-                            processed by Language Model API whose answer is spelled letter by letter by moving the arm
-                            into
-                            pretrained positions.
-                        </p>
-                        <p>This project yielded us a <a href="media/Victory_Certificate.pdf" target="_blank">victory</a>
-                            in the Most Creative Project category.</p>
-                        <h4>Group work by</h4>
-                        <ul>
-                            <li>Elias Vesanen</li>
-                            <li>Eetu Koskinen</li>
-                            <li>Sayed Alireza Fatemi</li>
-                            <li>Ahmad Erfani</li>
-                            <li>Denesa</li>
-                        </ul>
-                        <a href="https://github.com/ahmaderfani12/RoboHack" target="_blank">Source Code in GitHub</a>
-                    </div>
-                    <div>
-                        <video src="media/robohack.mp4" muted controls></video>
-                    </div>
-                </div>
-            </label>
-        </section>
 
         <section class="image-container">
             <label>
@@ -59,7 +24,28 @@
                 <img src="media/b.jpg" alt="Car">
                 <div class="hidden-content">
                     <div>
-                        <p>More information about this project...</p>
+                        <h4>Group work by</h4>
+                        <ul>
+                            <li>Elias Vesanen</li>
+                            <li>Joel Ventola</li>
+                            <li>Eetu Koskinen</li>
+                            <li>Tuomas Koponen</li>
+                        </ul>
+                        <p>
+                            We made this simple four-wheeled robot that is remote controlled from a laptop as a school
+                            project. The car scans its surroundings with a 2D Lidar sensor and sends the data via
+                            bluetooth to the controlling laptop, where it is visualized as a point cloud. A 3D-printed
+                            hull holds together the battery, a motor for each wheel, the Lidar and an ESP32
+                            microcontroller.
+                        </p>
+                        <p>
+                            Source code of the controller app in
+                            <a href="https://github.com/eelivaan/RemoteController2" target="_blank">my GitHub</a>
+                        </p>
+                        <p>
+                            Source code for the microcontroller in
+                            <a href="https://github.com/joevento/rc_car_obc" target="_blank">Joel's GitHub</a>
+                        </p>
                     </div>
                     <div>
                         <video src="media/rcesittely.mp4" muted controls></video>
@@ -71,16 +57,67 @@
         <section class="image-container">
             <label>
                 <input type="checkbox" class="toggle">
+                <h2>Robotics Hackathon Project</h2>
+                <img src="media/a.jpg" alt="RoboticArm">
+                <div class="hidden-content">
+                    <div>
+                        <h4>Group work by</h4>
+                        <ul>
+                            <li>Elias Vesanen</li>
+                            <li>Eetu Koskinen</li>
+                            <li>Sayed Alireza Fatemi</li>
+                            <li>Ahmad Erfani</li>
+                            <li>Denesa</li>
+                        </ul>
+                        <p>
+                            In <a href="https://luma.com/r066ymq1" target="_blank">Aaltoes Robotics & AI Hackathon
+                                2025</a>
+                            we made a Halloween-themed application where the user can ask questions from a "mechanical
+                            seer" that then answers by pointing individual letters with a SO-101 robotic arm.
+                            It consists of a user interface where the question is written and then
+                            processed by a Language Model API, whose answer is then spelled letter by letter by moving
+                            the arm into pretrained positions corresponding to each letter.
+                        </p>
+                        <p>This project yielded us a <a href="media/Victory_Certificate.pdf" target="_blank">victory</a>
+                            in the Most Creative Project category.</p>
+                        <p>Source code in
+                            <a href="https://github.com/ahmaderfani12/RoboHack" target="_blank">Ahmad's GitHub</a>
+                        </p>
+                    </div>
+                    <div>
+                        <video src="media/robohack.mp4" muted controls></video>
+                    </div>
+                </div>
+            </label>
+        </section>
+
+        <section class="image-container">
+            <label>
+                <input type="checkbox" class="toggle">
                 <h2>ASA Model Rocket Project</h2>
                 <img src="media/c.jpg" alt="Rocket">
                 <div class="hidden-content">
-                    <p>More information about this project...</p>
+                    <div>
+                        <p>
+                            Aalto Space Association (ASA) organized an introductory rocketry course where each
+                            participant built and launched their own 50 cm tall model rocket. The rocket was powered
+                            with the lowest thrust class solid rocket motor and would have reached an altitude of about
+                            100 meters if it had ascended straight up. However, the rocket arced significantly so the
+                            final altitude was lower. Nonetheless I'm now qualified to fly model rockets and other
+                            unmanned aerial vehicles.
+                        </p>
+                    </div>
+                    <div>
+                        <video src="media/flight.mp4" controls></video>
+                        <img src="media/d.jpg" alt="Rocket Landed">
+                    </div>
                 </div>
             </label>
         </section>
     </main>
 
     <footer>
+        <p><a href="https://github.com/eelivaan" target="_blank">GitHub</a></p>
         <p>&copy; 2026 All rights reserved</p>
     </footer>
 </body>

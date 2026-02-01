@@ -39,16 +39,30 @@ a {
 img {
     aspect-ratio: fixed;
     max-width: min(500px, 100%);
-    max-height: 400px;
+    max-height: 450px;
     border-radius: 10px;
 }
 
 video {
     aspect-ratio: fixed;
     max-width: min(500px, 100%);
-    max-height: 400px;
-    border-radius: 10px;
+    max-height: 450px;
     margin-right: 20px;
+    border-radius: 10px;
+}
+
+.hover-to-enlarge {
+    transition: 0.5s ease-in-out;
+}
+
+.hover-to-enlarge:hover {
+    max-width: 99%;
+    max-height: 99%;
+}
+
+.fill {
+    max-width: 99%;
+    max-height: 99%;
 }
 
 .image-container {
@@ -74,17 +88,13 @@ video {
     transition: max-height 1.0s ease-in-out;
     text-align: left;
     overflow: hidden;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: left;
     gap: 20px;
-    flex-flow: wrap;
 }
 
 /* Select .hidden-content that follows .toggle */
 .toggle:checked~.hidden-content {
     max-height: 3000px;
-}
-
-.hidden-content div {
-    flex: 1;
-    min-width: 250px;
 }

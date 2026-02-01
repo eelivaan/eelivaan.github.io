@@ -10,12 +10,12 @@
 
 <body>
     <header>
-        <h1>Portfolio of my Projects</h1>
+        <h1>Project Portfolio</h1>
         <p>by Elias Vesanen &mdash; Bachelor's student in Aalto University with a major in Automation and Robotics</p>
     </header>
 
     <main>
-        <P>Click sections for more details.</P>
+        <p>Click sections for more details</p>
 
         <label>
             <section class="image-container">
@@ -34,9 +34,10 @@
                         <p>
                             We made this simple four-wheeled robot that is remote controlled from a laptop as a course
                             project. The car scans its surroundings with a 2D Lidar sensor and sends the data via
-                            bluetooth to the controlling laptop, where it is visualized as a point cloud. A 3D-printed
-                            hull holds together the battery, a motor for each wheel, the Lidar and an ESP32
-                            microcontroller.
+                            bluetooth to the controlling laptop where the environment is visualized as a point cloud.
+                            The aim with this approach is to enable controlling of the car even without direct line of
+                            sight. A 3D-printed hull holds together the lidar, a battery, motors for each wheel and an
+                            ESP32 microcontroller.
                         </p>
                         <p>
                             Source code of the controller app in
@@ -47,9 +48,9 @@
                             <a href="https://github.com/joevento/rc_car_obc" target="_blank">Joel's GitHub</a>
                         </p>
                     </div>
-                    <div>
-                        <video src="media/rcesittely.mp4" controls></video>
-                    </div>
+                    <video src="media/rcesittely.mp4" controls class="fill" style="border: aqua 1px solid;"></video>
+                    <img src="media/f.png" alt="Lidar Point Cloud" class="fill">
+                    <img src="media/g.png" alt="Circuit Diagram" class="hover-to-enlarge">
                 </div>
             </section>
         </label>
@@ -84,9 +85,7 @@
                             <a href="https://github.com/ahmaderfani12/RoboHack" target="_blank">Ahmad's GitHub</a>
                         </p>
                     </div>
-                    <div>
-                        <video src="media/robohack.mp4" muted controls></video>
-                    </div>
+                    <video src="media/robohack.mp4" muted controls class="fill"></video>
                 </div>
             </section>
         </label>
@@ -96,15 +95,15 @@
                 <input type="checkbox" class="toggle">
                 <h2>ASA Model Rocket Project</h2>
                 <img src="media/c.jpg" alt="Rocket">
-                <div class="hidden-content">
+                <div class="hidden-content" style="grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));">
                     <div>
                         <p>
                             Aalto Space Association (ASA) organized an introductory rocketry course where each
                             participant built and launched their own 50 cm tall model rocket. The rocket was powered
                             with the lowest thrust class solid rocket motor and would have reached an altitude of about
                             100 meters if it had ascended straight up. However, my rocket arced significantly so the
-                            final altitude was lower. Nonetheless I'm now qualified to fly model rockets and other
-                            unmanned aerial vehicles as well.
+                            final altitude was lower. Nonetheless having passed this course I'm now qualified to fly
+                            model rockets and other unmanned aerial vehicles as well.
                         </p>
                     </div>
                     <div>

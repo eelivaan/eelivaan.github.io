@@ -62,7 +62,7 @@ video {
 
 .fill {
     max-width: 95%;
-    max-height: 95%;
+    max-height: none;
 }
 
 .image-container {
@@ -90,7 +90,7 @@ video {
     overflow-y: hidden;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-items: left;
+    justify-items: center;
     gap: 20px;
 }
 

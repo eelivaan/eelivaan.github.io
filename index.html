@@ -18,7 +18,7 @@
         <p>Click sections for more details</p>
 
         <label>
-            <section class="image-container">
+            <section class="project-entry">
                 <input type="checkbox" class="toggle">
                 <h2>Remote Controlled Car with Lidar</h2>
                 <img src="media/b.jpg" alt="Car">
@@ -48,16 +48,15 @@
                             <a href="https://github.com/joevento/rc_car_obc" target="_blank">Joel's GitHub</a>
                         </p>
                     </div>
-                    <video src="media/rcesittely_optimized.mp4" controls muted class="fill"
-                        style="border: aqua 1px solid;"></video>
+                    <video src="media/rcesittely_optimized.mp4" controls muted class="fill border"></video>
                     <img src="media/f.png" alt="Lidar Point Cloud" class="fill">
-                    <img src="media/g.png" alt="Circuit Diagram" class="hover-to-enlarge">
+                    <img src="media/g.png" alt="Circuit Diagram" class="fill">
                 </div>
             </section>
         </label>
 
         <label>
-            <section class="image-container">
+            <section class="project-entry">
                 <input type="checkbox" class="toggle">
                 <h2>Robotics Hackathon Project</h2>
                 <img src="media/a.jpg" alt="RoboticArm">
@@ -92,7 +91,7 @@
         </label>
 
         <label>
-            <section class="image-container">
+            <section class="project-entry">
                 <input type="checkbox" class="toggle">
                 <h2>ASA Model Rocket Project</h2>
                 <img src="media/c.jpg" alt="Rocket">
@@ -115,12 +114,49 @@
             </section>
         </label>
 
+        <label>
+            <section class="project-entry">
+                <input type="checkbox" class="toggle">
+                <h2>Black Hole Rendering</h2>
+                <img src="media/bh/bh.png" alt="Black Hole">
+                <div class="hidden-content">
+                    <div>
+                        <p>
+                            A simplistic model of a Schwarzschild black hole (i.e. non-rotating, non-charged) that I
+                            made with Unreal Engine. The image is rendered with raymarching in euclidean space where the
+                            ray is bent at each step inversely proportionally to the distance from the event horizon.
+                            One could do better by calculating geodesics in curved spacetime, but this simple model is
+                            enough to create nice visuals. The accretion disk is modelled as a thick disk that emits
+                            black body radiation with temperature decreasing proportionally to the distance from the
+                            black hole.
+                        </p>
+                        <p>
+                            The shader code that does the actual raymarching is
+                            <a href="https://github.com/eelivaan/eelivaan.github.io/blob/main/media/bh/shadercode.hlsl"
+                                target="_blank">here</a> for reference.
+                        </p>
+                    </div>
+                    <video src="media/bh/video.webm" autoplay loop controls class="fill border"></video>
+                    <div>
+                        <img src="media/bh/einsteinring.png" alt="Einstein Ring" class="fill border">
+                        <p style="font-style: italic;">
+                            An <a href="https://en.wikipedia.org/wiki/Einstein_ring" target="_blank">Einstein Ring</a>
+                            occurs when viewed with proper alignment
+                        </p>
+                    </div>
+                    <img src="media/bh/bh.png" alt="Black Hole" class="fill border">
+                </div>
+            </section>
+        </label>
+
     </main>
 
     <footer>
         <p><a href="https://github.com/eelivaan" target="_blank">GitHub</a></p>
         <p>&copy; 2026 All rights reserved</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

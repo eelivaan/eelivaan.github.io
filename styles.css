@@ -65,14 +65,22 @@ video {
     max-height: none;
 }
 
-.image-container {
+img.fill {
+    cursor: zoom-in;
+}
+
+.border {
+    border: 1px solid aqua;
+}
+
+.project-entry {
     padding: 5px;
     margin-top: 20px;
     border: 1px transparent;
     border-radius: 10px;
 }
 
-.image-container:hover {
+.project-entry:hover {
     border-style: solid;
     border-color: aqua;
 }

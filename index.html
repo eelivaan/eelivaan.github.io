@@ -10,12 +10,17 @@
 
 <body>
     <header>
-        <h1>Project Portfolio</h1>
-        <p>by Elias Vesanen &mdash; Bachelor's student in Aalto University with a major in Automation and Robotics</p>
+        <h1 style="color: aqua">Project Portfolio</h1>
+        <p style="color: aqua;">by Elias Vesanen</p>
+        <p>I'm a Bachelor's student in Aalto University with a major in Automation and Robotics.<br>
+            In addition to robotics, I also have fascination towards computer graphics and especially space-themed
+            renderings.<br>
+            Here are some of my projects for reference.
+        </p>
     </header>
 
     <main>
-        <p>Click sections for more details</p>
+        <p style="font-style: italic;">Click sections for more details</p>
 
         <label>
             <section class="project-entry">
@@ -40,11 +45,11 @@
                             ESP32 microcontroller.
                         </p>
                         <p>
-                            Source code of the controller app in
+                            Source code of the controller app (Scala) in
                             <a href="https://github.com/eelivaan/RemoteController2" target="_blank">my GitHub</a>
                         </p>
                         <p>
-                            Source code for the microcontroller in
+                            Source code for the microcontroller (c++) in
                             <a href="https://github.com/joevento/rc_car_obc" target="_blank">Joel's GitHub</a>
                         </p>
                     </div>
@@ -81,7 +86,7 @@
                         </p>
                         <p>This project yielded us a <a href="media/Victory_Certificate.pdf" target="_blank">victory</a>
                             in the Most Creative Project category.</p>
-                        <p>Source code in
+                        <p>Source code (Python) in
                             <a href="https://github.com/ahmaderfani12/RoboHack" target="_blank">Ahmad's GitHub</a>
                         </p>
                     </div>
@@ -122,26 +127,27 @@
                 <div class="hidden-content">
                     <div>
                         <p>
-                            A simplistic model of a Schwarzschild black hole (i.e. non-rotating, non-charged) that I
+                            A model of a Schwarzschild black hole (i.e. non-rotating, non-charged) that I
                             made with Unreal Engine. The image is rendered with raymarching in euclidean space where the
                             ray is bent at each step inversely proportionally to the distance from the event horizon.
                             One could do better by calculating geodesics in curved spacetime, but this simple model is
-                            enough to create nice visuals. The accretion disk is modelled as a thick disk that emits
-                            black body radiation with temperature decreasing proportionally to the distance from the
-                            black hole.
+                            enough to create some nice visuals. The accretion disk is modelled as a thick disk that
+                            emits black body radiation with temperature decreasing proportionally to the distance from
+                            the horizon. The background stars are from a real image of our galaxy.
                         </p>
                         <p>
                             The shader code that does the actual raymarching is
                             <a href="https://github.com/eelivaan/eelivaan.github.io/blob/main/media/bh/shadercode.hlsl"
                                 target="_blank">here</a> for reference.
                         </p>
+                        <p>Click the images to enlarge.</p>
                     </div>
                     <video src="media/bh/video.webm" autoplay loop controls class="fill border"></video>
                     <div>
                         <img src="media/bh/einsteinring.png" alt="Einstein Ring" class="fill border">
                         <p style="font-style: italic;">
                             An <a href="https://en.wikipedia.org/wiki/Einstein_ring" target="_blank">Einstein Ring</a>
-                            occurs when viewed with proper alignment
+                            occurs when viewing with proper alignment
                         </p>
                     </div>
                     <img src="media/bh/bh.png" alt="Black Hole" class="fill border">

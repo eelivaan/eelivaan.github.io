@@ -69,6 +69,11 @@ img.fill {
     cursor: zoom-in;
 }
 
+img.fill:fullscreen {
+    cursor: zoom-out;
+    background-color: black;
+}
+
 .border {
     border: 1px solid aqua;
 }

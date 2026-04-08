@@ -136,9 +136,9 @@
                             the horizon. The background stars are from a real image of our galaxy.
                         </p>
                         <p>
-                            The shader code that does the actual raymarching is
+                            The shader code that does the actual raymarching is visible
                             <a href="https://github.com/eelivaan/eelivaan.github.io/blob/main/media/bh/shadercode.hlsl"
-                                target="_blank">here</a> for reference.
+                                target="_blank">here</a>.
                         </p>
                         <p>Click the images to enlarge.</p>
                     </div>
@@ -151,6 +151,35 @@
                         </p>
                     </div>
                     <img src="media/bh/bh.png" alt="Black Hole" class="fill border">
+                </div>
+            </section>
+        </label>
+
+        <label>
+            <section class="project-entry">
+                <input type="checkbox" class="toggle">
+                <h2>Procedural Planets</h2>
+                <img src="media/planets/Cover.jpg" alt="Planet">
+                <div class="hidden-content">
+                    <div>
+                        <p>
+                            Some fictional planets I created with Unreal Engine. Shaping and coloring of the terrain is
+                            done procedurally, that is they are based on combination of fractal noise signals. With this
+                            approach it becomes possible to have one-meter-scale details over the whole planetary
+                            surface (an area of about 510 billion m^2) without blowing up the memory since detail is
+                            only generated as needed around the camera. Plants and rocks are
+                            <a href="https://quixel.com/megascans" target="_blank">Megascans</a> from
+                            the real world.
+                        </p>
+                        <p>
+                            Notably the whole thing, including N-Body simulation for celestial mechanics, runs in real
+                            time at 30 FPS (with some beefy hardware though). This led me to develop also a simple
+                            rocket simulator to fly around this solar system.
+                        </p>
+                    </div>
+                    <video src="media/planets/Clip1.mp4" controls class="fill"></video>
+                    <img src="media/planets/Cover.jpg" alt="Planet" class="fill border">
+                    <video src="media/planets/Planets1.mov" controls class="fill"></video>
                 </div>
             </section>
         </label>

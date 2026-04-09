@@ -37,12 +37,15 @@
                             <li>Tuomas Koponen</li>
                         </ul>
                         <p>
-                            We made this simple four-wheeled robot that is remote controlled from a laptop as a course
-                            project. The car scans its surroundings with a 2D Lidar sensor and sends the data via
+                            We made this simple four-wheeled robot that is remote controlled from a laptop as a
+                            university course project. The car scans its surroundings with a 2D Lidar sensor and sends
+                            the data via
                             bluetooth to the controlling laptop where the environment is visualized as a point cloud.
                             The aim with this approach is to enable controlling of the car even without direct line of
                             sight. A 3D-printed hull holds together the lidar, a battery, motors for each wheel and an
-                            ESP32 microcontroller.
+                            ESP32 microcontroller. Initially the wireless communication was intended to be done via
+                            nRF24 radio modules as is marked on the circuit diagram, but we had some issues with them
+                            and ended up using bluetooth instead.
                         </p>
                         <p>
                             Source code of the controller app (Scala) in
@@ -107,8 +110,9 @@
                             participant built and launched their own 50 cm tall model rocket. The rocket was powered
                             with the lowest thrust class solid rocket motor and would have reached an altitude of about
                             100 meters if it had ascended straight up. However, my rocket arced significantly so the
-                            final altitude was lower. Nonetheless, having passed this course, I'm now qualified to fly
-                            model rockets and other unmanned aerial vehicles as well.
+                            final altitude was lower. The rocket is so light that it doesn't need an actual parachute
+                            but instead this tinfoil slice is enough to slow it down for a safe landing.
+                            Having passed this course, I'm now qualified to fly model rockets of any scale.
                         </p>
                     </div>
                     <div>
@@ -131,18 +135,18 @@
                             made with Unreal Engine. The image is rendered with raymarching in euclidean space where the
                             ray is bent at each step inversely proportionally to the distance from the event horizon.
                             One could do better by calculating geodesics in curved spacetime, but this simple model is
-                            enough to create some nice visuals. The accretion disk is modelled as a thick disk that
+                            enough to create some nice visuals. The accretion disk is modelled as a thin cylinder that
                             emits black body radiation with temperature decreasing proportionally to the distance from
-                            the horizon. The background stars are from a real image of our galaxy.
+                            the horizon. The background stars are from a real image of the Milky Way.
                         </p>
                         <p>
-                            The shader code that does the actual raymarching is visible
+                            The shader code (HLSL) that does the actual raymarching is visible
                             <a href="https://github.com/eelivaan/eelivaan.github.io/blob/main/media/bh/shadercode.hlsl"
                                 target="_blank">here</a>.
                         </p>
                         <p>Click the images to enlarge.</p>
                     </div>
-                    <video src="media/bh/BH1.mp4" autoplay loop controls muted class="fill border"></video>
+                    <video src="media/bh/BH1.mp4" autoplay loop controls class="fill border"></video>
                     <div>
                         <img src="media/bh/einsteinring.png" alt="Einstein Ring" class="fill border">
                         <p style="font-style: italic;">
@@ -166,10 +170,11 @@
                             Some fictional planets I created with Unreal Engine. Shaping and coloring of the terrain is
                             done procedurally, that is they are based on combination of fractal noise signals. With this
                             approach it becomes possible to have one-meter-scale details over the whole planetary
-                            surface (an area of about 510 billion m^2) without blowing up the memory since detail is
-                            only generated as needed around the camera. Plants and rocks are
-                            <a href="https://quixel.com/megascans" target="_blank">Megascans</a> from
-                            the real world.
+                            surface (an area of about 510 billion m&sup2;) without blowing up the memory since detail is
+                            only generated as needed around the camera. Floating point precision issues created some
+                            challenge so in shader code the computation is actually discretized into 1 cm integer
+                            coordinates. Plants and rocks are
+                            <a href="https://quixel.com/megascans" target="_blank">Megascans</a> from the real world.
                         </p>
                         <p>
                             Notably the whole thing, including N-Body simulation for celestial mechanics, runs in real

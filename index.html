@@ -13,8 +13,8 @@
         <h1 style="color: aqua">Project Portfolio</h1>
         <p style="color: aqua;">by Elias Vesanen</p>
         <p>I'm a Bachelor's student in Aalto University with a major in Automation and Robotics.<br>
-            In addition to robotics, I also have fascination towards computer graphics and especially space-themed
-            renderings.<br>
+            I have fascination towards robotics, space technology and computer
+            graphics, especially space-themed renderings.<br>
             Here are some of my projects for reference.
         </p>
     </header>
@@ -37,7 +37,7 @@
                             <li>Tuomas Koponen</li>
                         </ul>
                         <p>
-                            We made this simple four-wheeled robot that is remote controlled from a laptop as a
+                            We made this simple four-wheeled robot that is remotely controlled from a laptop as a
                             university course project. The car scans its surroundings with a 2D Lidar sensor and sends
                             the data via
                             bluetooth to the controlling laptop where the environment is visualized as a point cloud.
@@ -83,7 +83,7 @@
                                 2025</a>
                             we made a Halloween-themed application where the user can ask questions from a "mechanical
                             seer" that then answers by pointing individual letters with a SO-101 robotic arm.
-                            It consists of a user interface where the question is written and then
+                            The project consists of a user interface where the question is written and then
                             processed by a Language Model API, whose answer is then spelled letter by letter by moving
                             the arm into pretrained positions corresponding to each letter.
                         </p>
@@ -167,19 +167,21 @@
                 <div class="hidden-content">
                     <div>
                         <p>
-                            Some fictional planets I created with Unreal Engine. Shaping and coloring of the terrain is
-                            done procedurally, that is they are based on combination of fractal noise signals. With this
-                            approach it becomes possible to have one-meter-scale details over the whole planetary
-                            surface (an area of about 510 billion m&sup2;) without blowing up the memory since detail is
-                            only generated as needed around the camera. Floating point precision issues created some
-                            challenge so in shader code the computation is actually discretized into 1 cm integer
-                            coordinates. Plants and rocks are
+                            Some fictional planets that I created with Unreal Engine. Shaping and coloring of the
+                            terrain is done procedurally, that is they are based on a combination of fractal noise
+                            signals. Only with this approach it becomes possible to have one-meter-scale details over
+                            the whole planetary surface (an area of about 510 billion m&sup2;) without blowing up the
+                            memory, since detail is only generated as needed around the camera. Floating point precision
+                            issues created some challenge, so in shader code the computation is actually discretized
+                            into 1 cm integer coordinates. Plants and rocks are
                             <a href="https://quixel.com/megascans" target="_blank">Megascans</a> from the real world.
                         </p>
                         <p>
                             Notably the whole thing, including N-Body simulation for celestial mechanics, runs in real
-                            time at 30 FPS (with some beefy hardware though). This led me to develop also a simple
-                            rocket simulator to fly around this solar system.
+                            time at 30 FPS (with some beefy hardware though). This led me to also develop a simple
+                            rocket simulator to fly around in this solar system. The key trick here to enable stable
+                            physics simulation is to use a non-inertial reference frame that moves with the focused
+                            vessel.
                         </p>
                     </div>
                     <video src="media/planets/Clip1.mp4" controls class="fill"></video>

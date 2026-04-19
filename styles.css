@@ -111,3 +111,8 @@ img.fill:fullscreen {
 .toggle:checked~.hidden-content {
     max-height: 3000px;
 }
+
+.invertcolor {
+    filter: invert(1);
+    mix-blend-mode: lighten;
+}

@@ -1,4 +1,4 @@
-// input: float3 lens (center), float Rs (Schwarzchild radius), float Rdisk, float ThcDisk, float TMaxDisk
+// input: float3 lens (center), float in_Rs (Schwarzchild radius), float Rdisk, float ThcDisk, float TMaxDisk
 //        float3 raystart, float3 raydir
 // output: float3 raydir, float3 color, float alpha
 

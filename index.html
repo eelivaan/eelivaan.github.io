@@ -29,9 +29,8 @@
                 <img src="media/b.jpg" alt="Car">
                 <div class="hidden-content">
                     <div>
-                        <h4>Group work by</h4>
+                        <h4>In collaboration with</h4>
                         <ul>
-                            <li>Elias Vesanen</li>
                             <li>Joel Ventola</li>
                             <li>Eetu Koskinen</li>
                             <li>Tuomas Koponen</li>
@@ -70,9 +69,8 @@
                 <img src="media/a.jpg" alt="RoboticArm">
                 <div class="hidden-content">
                     <div>
-                        <h4>Group work by</h4>
+                        <h4>In collaboration with</h4>
                         <ul>
-                            <li>Elias Vesanen</li>
                             <li>Eetu Koskinen</li>
                             <li>Sayed Alireza Fatemi</li>
                             <li>Ahmad Erfani</li>
@@ -172,21 +170,23 @@
                             signals. Only with this approach it becomes possible to have one-meter-scale details over
                             the whole planetary surface (an area of about 510 billion m&sup2;) without blowing up the
                             memory, since detail is only generated as needed around the camera. Floating point precision
-                            issues created some challenge, so in shader code the computation is actually discretized
-                            into 1 cm integer coordinates. Plants and rocks are
+                            issues created some challenge though, so in shader code the computation is actually
+                            discretized into 1 cm integer coordinates. Plants and rocks are
                             <a href="https://quixel.com/megascans" target="_blank">Megascans</a> from the real world.
                         </p>
                         <p>
                             Notably the whole thing, including N-Body simulation for celestial mechanics, runs in real
                             time at 30 FPS (with some beefy hardware though). This led me to also develop a simple
                             rocket simulator to fly around in this solar system. The key trick here to enable stable
-                            physics simulation is to use a non-inertial reference frame that moves with the focused
-                            vessel.
+                            physics simulation is to use a non-inertial reference frame that is based near the focused
+                            vessel and moves with it.
                         </p>
                     </div>
                     <video src="media/planets/Clip1.mp4" controls class="fill"></video>
-                    <img src="media/planets/Cover.jpg" alt="Planet" class="fill border">
                     <video src="media/planets/Planets1.mov" controls class="fill"></video>
+                    <video src="media/planets/Planets2.mov" controls class="fill"></video>
+                    <img src="media/planets/formula1.png" alt="Formula" class="invertcolor fill">
+                    <img src="media/planets/Cover.jpg" alt="Planet" class="fill border">
                 </div>
             </section>
         </label>

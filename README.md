@@ -1,1 +1,1 @@
-Personal project portfolio as GitHub Pages at https://eelivaan.github.io.
+My personal project portfolio as GitHub Pages at https://eelivaan.github.io

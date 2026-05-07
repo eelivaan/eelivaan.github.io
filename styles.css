@@ -78,6 +78,10 @@ img.fill:fullscreen {
     border: 1px solid aqua;
 }
 
+.border:fullscreen {
+    border: none;
+}
+
 .project-entry {
     padding: 5px;
     margin-top: 20px;

@@ -27,6 +27,36 @@
         <label>
             <section class="project-entry">
                 <input type="checkbox" class="toggle">
+                <h2>BalancerBot</h2>
+                <img src="media/bot.jpg" alt="bot">
+                <div class="hidden-content">
+                    <div>
+                        <p>
+                            A simple two-wheeled robot that I made as a hobby project. The bot uses a PID-controller
+                            with accelerometer data to stay in balance. Tuning of the PID was done eyeballing
+                            to start with but more sophisticated methods can be applied later on.
+                            For the purpose of that, I also made a GUI application that can be used to send the desired
+                            parameters to the Raspberry Pico 2 W microcontroller via Bluetooth Low Energy.
+                            The first prototype is built by just attaching the electronics and servos to a piece of
+                            cardboard but I'm designing a 3D-printed hull for the next version.
+                        </p>
+                        <p>
+                            Source code in
+                            <a href="https://github.com/eelivaan/BalancerBot" target="_blank">my GitHub</a>
+                        </p>
+                    </div>
+                    <div>
+                        <video src="media/bot1.mp4" controls class="fill"></video>
+                        <p class="caption">First iteration</p>
+                    </div>
+                    <img src="media/bot_schematics.png" class="fill">
+                </div>
+            </section>
+        </label>
+
+        <label>
+            <section class="project-entry">
+                <input type="checkbox" class="toggle">
                 <h2>Remote Controlled Car with Lidar</h2>
                 <img src="media/b.jpg" alt="Car">
                 <div class="hidden-content">
@@ -85,7 +115,8 @@
                             seer" that then answers by pointing individual letters with a SO-101 robotic arm.
                             The project consists of a user interface where the question is written and then
                             processed by a Language Model API, whose answer is then spelled letter by letter by moving
-                            the arm into pretrained positions corresponding to each letter.
+                            the arm to point at each letter. The positions corresponding to different letters were
+                            pre-recorded by moving the arm manually.
                         </p>
                         <p>This project yielded us a <a href="media/Victory_Certificate.pdf" target="_blank">victory</a>
                             in the Most Creative Project category.</p>
@@ -149,7 +180,7 @@
                     <video src="media/bh/BH1.mp4" autoplay loop controls class="fill border"></video>
                     <div>
                         <img src="media/bh/einsteinring.png" alt="Einstein Ring" class="fill border">
-                        <p style="font-style: italic;">
+                        <p class="caption">
                             An <a href="https://en.wikipedia.org/wiki/Einstein_ring" target="_blank">Einstein Ring</a>
                             occurs when viewing with proper alignment
                         </p>

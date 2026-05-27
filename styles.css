@@ -120,3 +120,13 @@ img.fill:fullscreen {
     filter: invert(1);
     mix-blend-mode: lighten;
 }
+
+h4 {
+    margin-bottom: 5px;
+}
+
+.caption {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+}

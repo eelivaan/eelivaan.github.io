@@ -17,7 +17,7 @@
             Technology.<br>
             I have fascination towards robotics, space technology and computer
             graphics, especially space-themed renderings.<br>
-            Here are some of my projects for reference.
+            Here is a casual documentation describing some of my projects.
         </p>
     </header>
 
@@ -28,15 +28,14 @@
             <section class="project-entry">
                 <input type="checkbox" class="toggle">
                 <h2>BalancerBot</h2>
-                <img src="media/bot3.jpg" alt="bot">
+                <img src="media/bot_pose.jpg" alt="bot">
                 <div class="hidden-content">
                     <div>
                         <p>
                             A two-wheeled robot that I made as a hobby project. The bot uses a PID-controller
                             with combined accelerometer and gyroscope data to stay in balance.
-                            Tuning of the PID was done eyeballing to begin with but more sophisticated methods can
-                            be applied later on. For the purpose of tuning, I also made a Tkinter GUI application that
-                            can be used to send the
+                            Tuning of the PID was done eyeballing, for the purpose of which I made a Tkinter GUI
+                            application that is used to send the
                             desired parameters to the Raspberry Pico 2 W microcontroller via Bluetooth Low Energy.
                             The first prototype was built by just attaching the electronics and servos to a piece of
                             cardboard but the second version features my customly designed and 3D-printed hull. Two
@@ -46,24 +45,29 @@
                             their nominal voltage is between 4.8V to 6.0V.
                         </p>
                         <p>
+                            Two more cascading PID-controllers are used to control driving speed and heading angle,
+                            which are requested from a remote control UI. Visible on the top is a time-of-flight sensor
+                            that is for now used to stop movement before any collision. However, I'm exploring
+                            how to implement autonomous movement using that for obstacle detection and accelerometer
+                            combined with a magnetometer for rough inertial mapping.
+                        </p>
+                        <p>
                             Source code in
                             <a href="https://github.com/eelivaan/BalancerBot" target="_blank">my GitHub</a>
                         </p>
                     </div>
                     <div>
-                        <video src="media/bot2.mp4" controls class="fill"></video>
+                        <video src="media/bot_highres.mp4" controls class="fill"></video>
                     </div>
                     <img src="media/bot_schematics.png" class="fill">
-                    <div>
-                        <img src="media/bot_CAD.png" class="fill">
-                        <p class="caption">The CAD model</p>
-                    </div>
+                    <img src="media/bot-exploded.png" class="fill">
                     <div>
                         <video src="media/bot1.mp4" controls class="fill"></video>
                         <p class="caption">The first proof-of-consept assembly</p>
                     </div>
                     <div>
-                        <img src="media/bot-exploded.png" class="fill">
+                        <img src="media/bot_open.jpg" class="fill">
+                        <p class="caption">What it has eaten</p>
                     </div>
                 </div>
             </section>

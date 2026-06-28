@@ -106,9 +106,16 @@ img.fill:fullscreen {
     text-align: left;
     overflow-y: hidden;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-items: center;
+    grid-template-columns: 1fr;
+    justify-items: left;
     gap: 20px;
+}
+
+/* Display two columns on larger screens */
+@media (min-width: 800px) {
+    .hidden-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* Select .hidden-content that follows .toggle */

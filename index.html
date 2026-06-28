@@ -17,12 +17,12 @@
             Technology.<br>
             I have fascination towards robotics, space technology and computer
             graphics, especially space-themed renderings.<br>
-            Here is a casual documentation describing some of my projects.
+            Here is a casual documentation describing some of my projects for reference.
         </p>
     </header>
 
     <main>
-        <p style="font-style: italic;">Click sections for more details</p>
+        <p class="caption">Click sections for more details</p>
 
         <label>
             <section class="project-entry">
@@ -35,10 +35,10 @@
                             A two-wheeled robot that I made as a hobby project. The bot uses a PID-controller
                             with combined accelerometer and gyroscope data to stay in balance.
                             Tuning of the PID was done eyeballing, for the purpose of which I made a Tkinter GUI
-                            application that is used to send the
-                            desired parameters to the Raspberry Pico 2 W microcontroller via Bluetooth Low Energy.
+                            application that is used to send the desired parameters to the microcontroller via
+                            Bluetooth Low Energy.
                             The first prototype was built by just attaching the electronics and servos to a piece of
-                            cardboard but the second version features my customly designed and 3D-printed hull. Two
+                            cardboard but the second version features my customly designed, 3D-printed hull. Two
                             continuous-rotation servos were chosen for the drivetrain because of their high torque
                             and internal speed control.
                             Surprisingly a single 3.7V LiPo cell is enough to power the servos even though
@@ -48,7 +48,7 @@
                             Two more cascading PID-controllers are used to control driving speed and heading angle,
                             which are requested from a remote control UI. Visible on the top is a time-of-flight sensor
                             that is for now used to stop movement before any collision. However, I'm exploring
-                            how to implement autonomous movement using that for obstacle detection and accelerometer
+                            how to implement autonomous movement using that for obstacle detection and the accelerometer
                             combined with a magnetometer for rough inertial mapping.
                         </p>
                         <p>
@@ -66,7 +66,7 @@
                         <p class="caption">The first proof-of-consept assembly</p>
                     </div>
                     <div>
-                        <img src="media/bot_open.jpg" class="fill">
+                        <img src="media/bot-opened.jpg" class="fill">
                         <p class="caption">What it has eaten</p>
                     </div>
                 </div>
@@ -134,7 +134,9 @@
                             In <a href="https://luma.com/r066ymq1" target="_blank">Aaltoes Robotics & AI Hackathon
                                 2025</a>
                             we made a Halloween-themed application where the user can ask questions from a "mechanical
-                            seer" that then answers by pointing individual letters with a SO-101 robotic arm.
+                            seer" that then answers by pointing out individual letters with a
+                            <a href="https://github.com/TheRobotStudio/SO-ARM100" target="_blank">
+                                SO-101 robotic arm</a>.
                             The project consists of a user interface where the question is written and then
                             processed by a Language Model API, whose answer is then spelled letter by letter by moving
                             the arm to point at each letter. The positions corresponding to different letters were
@@ -184,7 +186,7 @@
                 <div class="hidden-content">
                     <div>
                         <p>
-                            A model of a Schwarzschild black hole (i.e. non-rotating, non-charged) that I
+                            A model of a Schwarzschild black hole (i.e. one that is non-rotating and non-charged) that I
                             made with Unreal Engine. The image is rendered with raymarching in euclidean space where the
                             ray is bent at each step inversely proportionally to the distance from the event horizon.
                             One could do better by calculating geodesics in curved spacetime, but this simple model is
@@ -193,7 +195,7 @@
                             the horizon. The background stars are from a real image of the Milky Way.
                         </p>
                         <p>
-                            The shader code (HLSL) that does the actual raymarching is visible
+                            My shader code (HLSL) that does the actual raymarching is visible
                             <a href="https://github.com/eelivaan/eelivaan.github.io/blob/main/media/bh/shadercode.hlsl"
                                 target="_blank">here</a>.
                         </p>
@@ -221,20 +223,20 @@
                     <div>
                         <p>
                             Some fictional planets that I created with Unreal Engine. Shaping and coloring of the
-                            terrain is done procedurally, that is they are based on a combination of fractal noise
+                            terrain is done procedurally, that is they are derived from a combination of fractal noise
                             signals. Only with this approach it becomes possible to have one-meter-scale details over
                             the whole planetary surface (an area of about 510 billion m&sup2;) without blowing up the
-                            memory, since detail is only generated as needed around the camera. Floating point precision
-                            issues created some challenge though, so in shader code the computation is actually
-                            discretized into 1 cm integer coordinates. Plants and rocks are
+                            computer memory, since detail is only generated as needed around the camera. Floating point
+                            precision issues created some challenge though, so in shader code the computation is
+                            actually discretized into 1 cm integer coordinates. Plants and rocks are
                             <a href="https://quixel.com/megascans" target="_blank">Megascans</a> from the real world.
                         </p>
                         <p>
                             Notably the whole thing, including N-Body simulation for celestial mechanics, runs in real
-                            time at 30 FPS (with some beefy hardware though). This led me to also develop a simple
+                            time at 30 FPS (with some beefy hardware sure). This led me to also develop a simple
                             rocket simulator to fly around in this solar system. The key trick here to enable a stable
                             physics simulation is to use a non-inertial reference frame that is based near the focused
-                            vessel and moves with it.
+                            vessel and moves along with it.
                         </p>
                     </div>
                     <video src="media/planets/Clip1.mp4" controls class="fill border"></video>

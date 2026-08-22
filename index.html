@@ -32,7 +32,7 @@
                 <div class="hidden-content">
                     <div>
                         <p>
-                            A two-wheeled robot that I designed, manufactured and programmed during a summer break.
+                            A two-wheeled robot that I designed, assembled and programmed during a summer break.
                             The bot uses a PID-controller with combined accelerometer and gyroscope data to stay in
                             balance. Tuning of the PID was done eyeballing, for the purpose of which I made a Tkinter
                             GUI application that is used to send the desired parameters to the microcontroller via
@@ -46,10 +46,10 @@
                         </p>
                         <p>
                             Two more cascading PID-controllers are used to control driving speed and heading angle,
-                            which are requested from a remote control UI. Visible on the top is a time-of-flight sensor
-                            that is for now used to stop movement before any collision. However, I'm exploring
-                            how to implement autonomous movement using that for obstacle detection and the accelerometer
-                            combined with a magnetometer for rough inertial mapping.
+                            which are requested from a remote control UI. Visible on the top is a small depth camera
+                            (8x8 time-of-flight sensor) that is, for now, used to stop movement before any collision.
+                            However, I'm exploring autonomous movement using that for obstacle detection
+                            and the accelerometer combined with a magnetometer for rough inertial mapping.
                         </p>
                         <p>
                             Source code (MicroPython) in
@@ -57,7 +57,7 @@
                         </p>
                     </div>
                     <div>
-                        <video src="media/bot_highres.mp4" controls class="fill"></video>
+                        <video src="media/bot_driving.mp4" controls class="fill"></video>
                     </div>
                     <img src="media/bot_schematics.png" class="fill">
                     <img src="media/bot-exploded.png" class="fill">
@@ -67,7 +67,6 @@
                     </div>
                     <div>
                         <img src="media/bot-opened.jpg" class="fill">
-                        <p class="caption">What it has eaten</p>
                     </div>
                 </div>
             </section>
